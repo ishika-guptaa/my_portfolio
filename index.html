@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ea4aeb8201.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">My <span class="myColor">Protfolio</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class=" fas fa-solid fa-circle-xmark"  onclick="closeMenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <!-- ----hero section---- -->
+            <div class="header-text">
+                <h1>Hi, I'm <span class="myColor">Ishika</span> <br> From Gorakhpur</h1>     
+                <br/>      
+
+             <!-- --------------------------------- -->
+             <span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Engineer  ',
+						'Web Developer  ',
+						'Problem Solver   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+             <!-- --------------------------------- -->
+             <a href="./images/my_resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ----about-section------- -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/photo_about.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat inventore excepturi velit
+                        fugiat sapiente eos maiores aperiam cumque alias laboriosam repudiandae odit numquam, officia
+                        nihil fuga nobis laborum. Cupiditate, laborum. Laboriosam eaque quos obcaecati vel doloribus
+                        voluptate, aperiam labore exercitationem saepe quas consectetur quo nobis assumenda magnam
+                        dolores beatae atque.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Dsigning Web/App interfaces</li>
+                            <li><span>Web Developmant</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Dsigning Web/App interfaces</li>
+                            <li><span>2019 - 2021</span><br>Web app Development</li>
+                            <li><span>2017 - 2019</span><br>Building Android/iOS apps</li>
+                            <li><span>2016 - 2017</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Dsigning Web/App interfaces</li>
+                            <li><span>Web Developmant</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----services section------- -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab, commodi neque labore
+                        dicta quam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab, commodi neque labore
+                        dicta quam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab, commodi neque labore
+                        dicta quam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------portfolio section----------->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>The app connects Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>The app connects Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media</h3>
+                        <p>The app connects Lorem ipsum dolor sit amet consectetur.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See More</a>
+        </div>
+    </section>
+
+
+    <!-- -----------contact section---- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>isha02april@gmail.com</p>
+                    <p> <i class="fa-sharp fa-solid fa-phone-volume"></i>+91 9569543653</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./images/my_resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" autocomplete="off" placeholder="Your Name" required id="">
+                        <input type="email" name="Email"autocomplete="off"  placeholder="Your Email" required id="">
+                        <textarea name="Message" autocomplete="off" placeholder="Your Message" id="" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="copyright">
+            <p>Copyright &copy; Ishika. Made with <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- --------javascript-------- -->
+    <script src="style.js"></script>
+</body>
+
+</html>
