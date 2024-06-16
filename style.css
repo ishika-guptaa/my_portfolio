@@ -39,7 +39,7 @@ h1.logo {
 }
 
 .myColor {
-    color: #ff004f;
+    color: cyan;
 }
 
 nav ul li {
@@ -60,7 +60,7 @@ nav ul li a::after,
     content: '';
     width: 0%;
     height: 3px;
-    background: #ff004f;
+    background: cyan;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -150,52 +150,6 @@ nav ul li a:hover::after {
     display: block;
 }
 
-/* --------services section----- */
-#services {
-    padding: 30px 0;
-}
-
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    margin-top: 50px;
-
-}
-
-.services-list div {
-    padding: 40px;
-    background-color: #262626;
-    font-size: 13px;
-    font-weight: 300;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-.services-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.services-list div h2 {
-    font-size: 30px;
-    margin-bottom: 50px;
-    margin-bottom: 15px;
-}
-
-.services-list div a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-
-}
-
-.services-list div:hover {
-    background-color: #c70a46;
-    transform: translateY(-10px);
-}
 
 /* ------portfolio section-------- */
 #portfolio {
@@ -218,6 +172,7 @@ nav ul li a:hover::after {
 
 .work img {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -229,7 +184,7 @@ nav ul li a:hover::after {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), cyan);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -249,7 +204,7 @@ nav ul li a:hover::after {
 
 .layer a {
     margin-top: 10px;
-    color: #ff004f;
+    color: cyan;
     font-size: 18px;
     text-decoration: none;
     background-color: #fff;
@@ -274,7 +229,7 @@ nav ul li a:hover::after {
     width: fit-content;
     color: #fff;
     padding: 14px 50px;
-    border: 2px solid #ff004f;
+    border: 2px solid cyan;
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.5s;
@@ -282,7 +237,7 @@ nav ul li a:hover::after {
 }
 
 .btn:hover {
-    background-color: #ff004f;
+    background-color: cyan;
 }
 
 /* ----contact section----- */
@@ -295,8 +250,8 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-    color: #ff004f;
-    color: #ff004f;
+    color: cyan;
+    color: cyan;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -316,14 +271,14 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-    color: #ff004f;
+    color: cyan;
     transform: translateY(-3px);
 
 }
 
 .btn.btn2 {
     display: inline-block;
-    background-color: #ff004f;
+    background-color: cyan;
 }
 
 .contact-right {
@@ -367,7 +322,7 @@ form .btn2 {
     font-weight: 300;
 }
 .copyright i{
-   color: #ff004f;
+   color: cyan;
 }
 
 /* ----------------- */
@@ -439,7 +394,7 @@ nav .fas{
         cursor: pointer;
     }
     nav ul{
-        background-color: #ff004f;
+        background-color: cyan;
         position: fixed;
         top: 0;
         right: -200px;
